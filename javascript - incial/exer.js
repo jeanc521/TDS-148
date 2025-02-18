@@ -29,11 +29,9 @@ sobrenome = "Romoaldo"
 
 
 // Coloque a seguinte frase em uma variavel: It´s time
-var naosei = "It´s time"
+var naosei = "It´s tim"
 
-console.log(typeof number, typeof hambuguer, typeof endereco, typeof pessoa, typeof rua,typeof moradia, typeof CPF, typeof casa, typeof numerodacasa, typeof nome, typeof sobrenome, typeof naosei )
-
-
+console.log(typeof number, typeof casa)
 
 
 
