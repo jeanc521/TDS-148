@@ -1,47 +1,29 @@
-       //EXERCICIOS variaveis
-
-
 //Declara uma variavel com a sua idade
-const number = 18
+const  idade = 21
 
 //Declarar uma variavel com a sua comida preferida e atribuir um valor
-let hambuguer 
-hambuguer = "Melhor comida do mundo"
+var comidapf
+comidapf = "Strogonoff"
 
 // Declarar uma variavel e nao dar valor pra ela, sendo undefined
-var endereco
+var nada
 
 // Declarar 5 variaveis diferentes sem valores
-var pessoa, rua, carro, moradia,CPF
+var variavelSemValor1,variavelSemValor2,variavelSemValor3,variavelSemValor4,variavelSemValor5
 
 // Declarar uma variavel contendo uma string
-let casa = "Sobrado"
+let nome = "joao"
 
 // Declare uma varivel contendo um numero dentro de uma string
-let numerodacasa = "157"
+var numero = "10"
 
 // Declare uma variavel com seu nome, e outra com sobrenome, e concatene os dois, depois faça um template string dos 2
-var nome,sobrenome
-console.log("Meu nome é" + nome + "e meu "+ sobrenome)
-console.log(`Meu nome é ${nome} ${sobrenome}`)
-nome = "Jean"
-sobrenome = "Romoaldo"
-
+var nome1, sobrenome 
+console.log("Meu nome é" + nome + "e meu sobrenome" + sobrenome)
+console.log(`Meu nome é ${nome1} ${sobrenome}`)
 
 // Coloque a seguinte frase em uma variavel: It´s time
-var naosei = "It´s tim"
-
-console.log(typeof number, typeof casa)
-
-
-
-
-
-
-
-
-
-
-
+var frase = "it's time"
 
 // verifique o tipo de todas as variaveis criadas
+console.log(typeof idade, typeof nada, typeof numero)
