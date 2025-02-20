@@ -5,7 +5,6 @@ function somar(){
     res.innerHTML = numero1 + numero2
  
 }
-
 function sub(){
     var numero1 = parseFloat(document.getElementById("n3").value)
     var numero2 = parseFloat(document.getElementById("n4").value)
@@ -13,7 +12,6 @@ function sub(){
     res.innerHTML = numero1 - numero2
   
 }
-
 function multi(){
     var numero1 = parseFloat(document.getElementById("n5").value)
     var numero2 = parseFloat(document.getElementById("n6").value)
@@ -21,7 +19,6 @@ function multi(){
     res.innerHTML = numero1 * numero2
 
 }
-
 function div(){
     document.getElementById("n8").style.border = "1px solid black"
     var numero1 = parseFloat(document.getElementById("n7").value)
@@ -35,7 +32,6 @@ function div(){
     } 
     
 }
-
 function media(){
     var m1 = parseFloat(document.getElementById("m1").value)
     var m2 = parseFloat(document.getElementById("m2").value)
@@ -66,17 +62,21 @@ function imc(){
     var msgIMC = document.getElementById("msgIMC")
     console.log(res)
 
+    imc = parseFloat(imc)
 
-
-    if(res >= 40){
+     if(isNaN(peso) || isNaN(altura) ){
+        imc.textContent = "Digite apenas numeros!"
+        document.getElementById("msgIMC").textContent = " "
+        return
+    }else if(res >= 40){
         imc.textContent = res
         msgIMC.textContent = "Obisedade grau III"
         msgIMC.style.color = "red"
-    }else if(res >= 35.9 && 39.9){
+    }else if(res > 35 && res <= 39.9){
         imc.textContent = res
         msgIMC.textContent = "Obesidade grau II"
         msgIMC.style.color = "red"
-    }else if(res >= 30 && res >= 34.9){
+    }else if(res >= 30 && res <= 34.9){
         imc.textContent = res
         msgIMC.textContent = "Obesidade grau I"
         msgIMC.style.color = "red"
@@ -99,18 +99,25 @@ function imc(){
 function ano(){
     var ano = parseFloat(document.getElementById("ano").value)
     var porta = document.getElementById("resa")
-    var res = 2025 - ano
+    const thisYear = Date().getFullYear();
+    const ano = thisYear - ano
+
 
     var msgporta = document.getElementById("msgporta")
     console.log(res)
 
-    if(res >= 18){
+    if(isNaN(ano)){
+        res.textContent = "Digite um numero de ano valido! ⚠"
+        res.style.color = "red"
+        return
+    }else if(res >= 18){
         msgporta.textContent = "Liberado pra entrar!"
-        msgporta.style.color = "hsl" 
+        msgporta.style.color = "green" 
     }else {
         msgporta.textContent = "Negado menos que 18, volte pra casa!"
         msgporta.style.color = "red"
     }
+    
 }
 
 
