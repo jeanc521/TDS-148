@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 50px;
+    padding: 10px;
+    width: 130px;
+    height: auto;
+
+}
+.card {
+    background-color: rgba(3, 108, 5, 0.563);
+    border-radius: 10px;
+    margin: 50px;
+    color: white;
+    width: 400px; 
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.05 background;
+    background-color: white;
+}
+.card>p{
+    margin: 14px;
+    font-size: small;
+    padding-top: 10px;
+    justify-content: left;
+}
+.card>h1{
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.img {
+    width: 100px;
+    height: 80px;
+}
