@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="img-logo" src="./images/homem aranha.webp" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#s1">Home</a>
+                    <a class="nav-link" href="#s2">Amigos</a>
+                    <a class="nav-link" href="#s3">Fotos</a>
+                    <a class="nav-link" href="#s4">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="s1">
+            <div class="s1-left">
+                <div class="wrap-img">
+                    <img onmouseover="troca()" onmouseout="troca()" onclick="troca()" id="imagem-h2" class="img-s1"
+                        src="./images/putz.png" width="80px" height="auto" alt="Profile">
+                </div>
+            </div>
+            <div class="s1-right">
+                <h2 class="title-name">Homem aranha</h2>
+                <p> O amigão da vizinhança, Homem-Aranha, é um herói que protege Nova York com suas habilidades
+                    incríveis.
+                    Após ser picado por uma aranha radioativa, ele ganha força sobre-humana, agilidade e um
+                    "sentido-aranha" que o alerta sobre perigos.
+                    No início, usa seus poderes para benefício próprio, até que uma tragédia o ensina que com grandes
+                    poderes vêm grandes responsabilidades.</p>
+            </div>
+        </section>
+        <section id="s2">
+            <div class="cartao">
+                <div class="wrap-img-card">
+                    <img src="./images/Peter_parker.PNG.webp" alt="peter" width="80px" height="auto">
+                </div>
+                <div class="wrap-info-card">
+                    <h3>Peter Paker</h3>
+                    <p>Peter Parker é um jovem inteligente, mas com uma vida difícil.
+                        Ele cresceu em Nova York com sua Tia May e Tio Ben, após perder seus pais em um acidente de
+                        avião quando era muito pequeno.
+                        Esse evento moldou sua vida, e a perda de seu tio.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="wrap-img-card">
+                    <img src="./images/Ned.jpg" alt="ned" width="150px" height="auto">
+                </div>
+                <div class="wrap-info-card">
+                    <h3>Ned</h3>
+                    <p>Ned é muito leal e um amigo confiável.Ele tem um grande senso de humor e muitas vezes serve como
+                        alívio cômico nos filmes.
+                        Seu relacionamento com Peter é baseado em confiança.</p>
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="wrap-img-card">
+                    <img src="./images/d.webp" alt="d" width="80px" height="auto">
+                </div>
+                <div class="wrap-info-card">
+                    <h3>Deredevil</h3>
+                    <p>Daredevil e Homem-Aranha são dois heróis de rua da
+                        Marvel que frequentemente se cruzam nos quadrinhos e nas adaptações da mídia,
+                        criando uma parceria interessante e dinâmica.</p>
+                </div>
+            </div>
+
+            <div class="cartao">
+                <div class="wrap-img-card">
+                    <img src="./images/Mary.jpg" alt="mary" width="80px" height="auto">
+                </div>
+                <div class="wrap-info-card">
+                    <h3>Mary Jane</h3>
+                    <p>Mary Jane Watson: Amiga e, eventualmente, esposa de Peter Parker (o Homem-Aranha).
+                        Ela é uma das personagens mais icônicas e desempenha um papel crucial em muitas das histórias de
+                        Peter.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="s3">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/marvels-spider-man-003.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/M.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/peti.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+
+        </section>
+        <section id="s4">
+            <h2>Contato</h2>
+            <div class="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Digite seu nome" id="nome">
+                <label for="assunto">Assunto com miranha</label>
+                <input type="text" placeholder="Digite o assunto" id="assunto">
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </div>
+        </section>
+        <footer>
+            <a target="_blank" href="https://www.disneyplus.com/pt-br/series/homem-aranha/5IOvHdSZO9kv"><img
+                    width="30px" height="auto" src="./images/disney.png" alt="Disney"></a>
+            <a target="_blank" href="https://github.com/jeanc521/TDS-148"><img width="30px" height="auto"
+                    src="./images/github-2.png" alt="Github"></a>
+            <a target="_blank" href="https://github.com/PatrickSilva04R"><img width="30px" height="auto"
+                    src="./images/github-2.png" alt="github"></a>
+        </footer>
+    </main>
+
+    <script>
+        function enviar() {
+            document.getElementById("nome").style.border = "1px solid black"
+            document.getElementById("assunto").style.border = "1px solid black"
+            const nome = document.getElementById("nome").value
+            const assunto = document.getElementById("assunto").value
+
+            if (!nome || !assunto) {
+                document.getElementById("nome").style.border = "2px solid red"
+                document.getElementById("assunto").style.border = "2px solid red"
+                return
+            }
+
+            const mensagem = `Gostaria de entrar em contato!!! \n\nNome: ${nome} \nAssunto: ${assunto}`
+            const msg = encodeURIComponent(mensagem)
+            window.location.href = `https://wa.me/999999999?text=${msg}`
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    height: auto;
+    min-width: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 40px;
+   
+}
+h2{
+    width: 100%;
+    text-align: center;
+}
+section{
+    padding: 10px;
+    border: 2px solid black;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    gap: 4vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+button{
+    justify-content: right;
+    align-items: center;
+    padding: 5px;
+    width: 80px;
+    height: 35px;
+    border-radius: 2px solid blue;
+    transition: all 200ms linear;
+    gap: 2vh;
+}
+button:hover{
+    display: flex;
+    width: 60px;
+    height: 35px;
+}
+label{
+    width: 100%;
+    margin-top: 2vh;
+    text-align: left;
+}
+input{
+    gap: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+
